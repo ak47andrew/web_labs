@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 9</title>
+</head>
+<body>
+    <form action="subit.php" method="post">
+        <fieldset>
+            <legend>Выберите любимый фрукт</legend>
+
+            <div>
+                Фрукт
+
+                <input list="fruits" id="product-choice" name="product" placeholder="Start typing...">
+                <datalist name="fruit" id="fruits">
+                    <option value="Ананас"></option>
+                    <option value="Абрикос"></option>
+                    <option value="Арбуз"></option>
+                    <option value="Авокадо"></option>
+                    <option value="Апельсин"></option>
+                    <option value="Дыня"></option>
+                </datalist>
+            </div>
+        </fieldset>
+        
+        <br>
+        <button type="submit">Отправить информацию</button>
+    </form>
+</body>
+</html>
