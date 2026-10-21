@@ -1,0 +1,50 @@
+.asteriod {
+    top: 80px;
+    left: 430px;
+}
+
+img {
+    position: absolute;    
+}
+
+.parent {
+    background-image: url("img/bg.jpg");
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+
+.planet1 {
+    top: 20px;
+    left: 190px;
+    z-index: 10;
+}
+
+.planet2 {
+    top: 50px;
+    left: 50px;
+    z-index: 20;
+}
+
+.planet3 {
+    top: 135px;
+    left: 150px;
+    z-index: 30;
+}
+
+.spaceship {
+    top: 150px;
+    left: 150px;
+    z-index: 21;
+}
+
+.ufo {
+    top: 285px;
+    left: 130px;
+    z-index: 31;
+}
+
+.superman {
+    left: 490px;
+    top: 330px;
+}

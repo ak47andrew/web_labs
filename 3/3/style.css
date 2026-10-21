@@ -1,0 +1,29 @@
+.page {
+    width: 690px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+header {
+    height: 172px;
+    border-bottom: 1px solid #000;
+}
+
+.sidebar {
+    float: left;
+    width: 172px;
+    height: 430px;
+    border-right: 1px solid #000;
+}
+
+.content {
+    float: left;
+    width: 517px;
+    height: 430px;
+}
+
+footer {
+    clear: both;
+    height: 172px;
+    border-top: 1px solid #000;
+}

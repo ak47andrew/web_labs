@@ -1,0 +1,103 @@
+/* Базовые стили страницы: убираем отступы, задаём шрифт и фон */
+body {
+    margin: 0;
+    font-size: 12px;
+    color: #222;
+    line-height: 1.4;
+    background: #fff;
+}
+
+/* Навигация: розовый фон */
+nav {
+    background: #008080; 
+}
+
+/* Список меню */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ссылки меню */
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #004b4b;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 2px solid #004b4b;
+}
+
+/* ID-селекторы для колонок*/
+#left, #center, #right {
+    padding: 5px;
+}
+
+/* Картинки в центральной колонке — большие */
+#center img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    display: block;
+}
+
+/* Картинки в боковых колонках — маленькие */
+#left img, #right img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px 5px 10px 0;
+    display: inline-block;
+}
+
+/* Заголовки */
+h2 {
+    font-size: 14px;
+    margin: 15px 0 10px 0;
+    color: #000;
+}
+
+/* Текст */
+p {
+    margin: 0 0 10px 0;
+    text-align: justify;
+}
+
+/* Подвал 4 колонки */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+    background: #008080;
+    border-bottom: 2px solid #004b4b;
+}
+
+/* ID селекторы колонок подвала */
+#f1, #f2, #f3, #f4 {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #004b4b;
+}
+
+/* Нижний колонтитул */
+#copyright {
+    background: #004b4b;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
