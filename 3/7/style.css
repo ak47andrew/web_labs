@@ -36,7 +36,6 @@
     background: #333;
 }
 
-/* show when hovering the parent li */
 .nav li:hover > ul { display: block; }
 
 .nav li ul a { font-size: 12px; }

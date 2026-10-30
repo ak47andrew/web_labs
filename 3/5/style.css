@@ -16,6 +16,10 @@
     background-color: #ddd;
 }
 
+.nav_el:hover {
+    background-color: #ccc;
+}
+
 .active {
     background-color: #d10953;
     color: #fff;
