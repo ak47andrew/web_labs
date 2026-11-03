@@ -1,0 +1,14 @@
+.something_cool {
+    border: 1px solid black;
+    padding: 15px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    width: 50%;
+}
+
+.something_cool:hover {
+    white-space: initial;
+}

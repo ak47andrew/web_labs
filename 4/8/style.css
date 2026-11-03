@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  
+  font-size: 16px; 
+  
+  padding: 0.6em 1.2em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  
+  color: #333333;
+  background-color: #cccccc;
+}
+
+.btn-sm {
+  font-size: 12px;
+}
+
+.btn-xl {
+  font-size: 24px;
+}

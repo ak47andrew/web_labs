@@ -1,0 +1,22 @@
+.hand {
+    cursor: grab;
+}
+
+.loading_pointer {
+    cursor: progress;
+}
+
+.loading {
+    cursor: wait;
+}
+
+.img {
+    cursor: url('cursor.png'), auto;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-bottom: 1em;
+}

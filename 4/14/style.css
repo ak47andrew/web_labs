@@ -1,0 +1,94 @@
+.scene {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: #c9d9e3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.scene > div { position: absolute; }
+
+.tower {
+    left: 92px; top: 125px;
+    width: 52px; height: 134px;
+    background: #fff;
+}
+
+.tower::before {
+    content: "";
+    position: absolute;
+    top: -32px; left: 0;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 32px solid #d4694f;
+}
+
+.tower::after {
+    content: "";
+    position: absolute;
+    left: 17px; top: 17px;
+    width: 17px; height: 20px;
+    background: #666;
+}
+
+.house {
+    left: 144px; top: 209px;
+    width: 137px; height: 50px;
+    background: #fff;
+}
+
+.house::before {
+    content: "";
+    position: absolute;
+    left: -39px; top: -50px;
+    width: 176px; height: 50px;
+    background: #d4694f;
+    clip-path: polygon(
+        39px 0, 155px 0,
+        155px 30px,
+        176px 50px,
+        0 50px,
+        0 30px, 39px 30px
+    );
+}
+
+.house::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 9px;
+    width: 16px; height: 26px;
+    background: #666;
+    box-shadow: 22px 0 #666, 45px 0 #666, 81px 0 #666, 103px 0 #666;
+}
+
+
+.cloud {
+    left: 162px; top: 82px;
+    width: 55px; height: 22px;
+    background: #eef3f7;
+    border-radius: 30px 30px 0 0 / 22px 22px 0 0;
+    animation: drift 10s linear infinite;
+}
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    left: 16px; top: -8px;
+    width: 26px; height: 16px;
+    background: inherit;
+    border-radius: 50% 50% 0 0;
+}
+
+.cloud2 {
+    left: 100px; top: 30px;
+    width: 55px; height: 22px;
+    background: #eef3f7;
+    border-radius: 30px 30px 0 0 / 22px 22px 0 0;
+    animation: drift 6s linear infinite;
+}
+
+@keyframes drift {
+    from {transform: translateX(-200px);}
+    to {transform: translateX(250px);}
+}

@@ -1,0 +1,39 @@
+.row {
+    display: inline-flex;
+    width: 600px;
+}
+
+.box {
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box_a {
+    width: calc((600px - 1px * 2) / 3);
+    margin: 1px;
+}
+
+.box_b {
+    width: calc((600px - 1px) / 2);
+    margin: 1px;
+}
+
+.box_aa {
+    background-image: linear-gradient(to bottom, yellow, white);
+}
+
+.box_ab {
+    background-image: linear-gradient(to right, yellow, white);
+}
+
+.box_ac {
+    background-image: linear-gradient(to left, yellow, white);
+}
+
+.box_ba {
+    background-image: linear-gradient(to bottom, red 0% 33%, white 33% 66%, red 66% 100%);
+}
+
+.box_bb {
+    background-image: linear-gradient(to right, red, blue, white 90%, red);
+}

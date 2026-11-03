@@ -1,0 +1,23 @@
+.a {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: blue;
+}
+
+.b {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #a4686879;
+}
+
+.c {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: green;
+}
+
+.d {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+}
