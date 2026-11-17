@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="container">
+        <div class="pane">
+            <h3>Сфинкс</h3>
+            <p>Одна из нескольких бесшерстных пород кошек. При выведении породы была закреплена естественная рецессивная
+                мутация, приводящая к отсутствию шерсти. В нынешний момент это полностью сформированная и достаточно
+                стабильная порода с 50-летним стажем, передающая свои признаки по рецессивному типу.</p>
+            <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+            <h3>Девон-рекс</h3>
+            <p>Порода домашних кошек, появившаяся в Великобритании в 1960-х гг. Отличительные черты - неординарная
+                внешность и дружественный нрав.</p>
+            <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+            <h3>Корниш-рекс</h3>
+            <p>Порода домашних кошек, относящаяся к короткошёрстной группе. Основной отличительной особенностью их
+                экстерьера является шерсть. Она не имеет остевых волосков, а подшёрсток завит в плотную волну,
+                напоминающую по структуре каракуль.
+            </p>
+            <button class="remove-button">[x]</button>
+        </div>
+    </div>
+
+    <script>
+        function funcgen(id) {
+            function inner() {
+                // Get actual button by id -> parent -> remove
+                // document.getElementsByClassName("remove-button")[id].parentElement.remove();
+
+                // Upd: id is unreliable bc they change on deletion. Do `disply: none` instead 
+                document.getElementsByClassName("remove-button")[id].parentElement.style.display = "none"
+
+                // Alternative would be to get a string of the <h3> and match that, but that's a bit too much work LOL
+            }
+
+            return inner;
+        }
+
+        const buttons = document.getElementsByClassName("remove-button");
+        for (let index = 0; index < buttons.length; index++) {
+            const element = buttons[index];
+            element.addEventListener("click", funcgen(index))
+            // I just now realized that you can do `(event) => {}`... 
+            // I just like this solution a bit too much, I'll use proper one for 7th lab
+        }
+    </script>
+</body>
+
+</html>

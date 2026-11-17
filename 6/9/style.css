@@ -1,0 +1,54 @@
+img {
+    position: absolute;    
+}
+
+button {
+    position: absolute;
+    top: 350px;
+    left: 220px;
+    z-index: 9999;
+}
+
+.parent {
+    background-image: url("img/bg.jpg");
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+
+.planet1 {
+    top: 20px;
+    left: 190px;
+    z-index: 10;
+}
+
+.planet2 {
+    top: 50px;
+    left: 50px;
+    z-index: 20;
+}
+
+.planet3 {
+    top: 135px;
+    left: 150px;
+    z-index: 30;
+}
+
+#ufo {
+    top: 150px;
+    left: 50px;
+    z-index: 999;
+}
+
+#asteriod {
+    top: 150px;
+    left: 150px;
+    z-index: 999;
+}
+
+#spaceship {
+    top: 150px;
+    left: 250px;
+    z-index: 999;
+}
+

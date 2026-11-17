@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #b9a9d8, #9fb7e3);
+    font-family: sans-serif;
+}
+
+#scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* so the boat sails out of view, no scrollbar */
+}
+
+#boat {
+    position: absolute;
+    left: calc(50% - 180px);
+    top: 60%;
+    width: 360px;
+    height: 125px;
+    transition: transform 3s ease-in;
+}
+
+#boat.away {
+    transform: translateX(100vw);
+}
+
+/* the button = the hull */
+#btn {
+    position: absolute;
+    inset: 0;
+    border: 0;
+    background: #6464c8;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 3;
+    /* above mast and sails, so they're hidden behind it */
+    border-radius: 10px;
+    transition: border-radius 0.8s;
+}
+
+#btn.hull {
+    border-radius: 10px 10px 180px 180px / 10px 10px 125px 125px;
+}
+
+/* mast: grows upward from the button's top edge */
+#mast {
+    position: absolute;
+    left: calc(50% - 8px);
+    bottom: 100%;
+    width: 16px;
+    height: 200px;
+    background: #6464c8;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 1s;
+    z-index: 1;
+}
+
+#mast.up {
+    transform: scaleY(1);
+}
+
+/* sails: triangles via clip-path, scale out from the mast */
+.sail {
+    position: absolute;
+    bottom: 100%;
+    background: #fff;
+    transform: scale(0);
+    transition: transform 1s;
+    z-index: 2;
+}
+
+#sail-left {
+    left: calc(50% - 130px);
+    width: 130px;
+    height: 180px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    transform-origin: bottom right;
+}
+
+#sail-right {
+    left: calc(50% + 8px);
+    width: 100px;
+    height: 160px;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    transform-origin: bottom left;
+}
+
+.sail.up {
+    transform: scale(1);
+}
